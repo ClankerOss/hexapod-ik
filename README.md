@@ -1,7 +1,7 @@
 # hexapod-ik
 
 Robotic hexapod leg with a full 3-DOF inverse kinematics solver,
-running on an Arduino in C.
+running on an Arduino in C++.
 
 Type a target coordinate (X, Y, Z) over Serial and the leg tip
 moves precisely to that position — joint angles solved in real time.
@@ -24,23 +24,6 @@ moves precisely to that position — joint angles solved in real time.
 | Femur (a) | 100 mm |
 | Tibia (b) | 150 mm |
 
-## Repository structure
-
-hexapod-ik/
-├── CAD/
-│   ├── Connector_to_body.stl
-│   ├── Connector_to_Servo2.stl
-│   ├── Foot.stl
-│   ├── Joint_1_to_2.stl
-│   ├── Joint_2_to_3.stl
-│   ├── Torque_1_to_2.stl
-│   ├── Torque_2_to_3.stl
-│   └── Assembly.stl
-├── Arduino/
-│   ├── InverseKinematics.ino
-│   ├── InverseKinematicsConst.ino
-│   └── ServoSweepTest.ino
-└── README.md
 
 ## CAD files
 
@@ -94,4 +77,4 @@ are designed to accept the screws directly — no inserts required.
 
 ## Built with
 
-C · Arduino · Servo.h · Geometric IK · PETG · MG995
+C++ · Arduino · Servo.h · Geometric IK · PETG · MG995
